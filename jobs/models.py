@@ -3,6 +3,7 @@ from django.db import models
 class JobApplication(models.Model):
     STATUS_CHOICES = [
         ('applied', 'Applied'),
+        ('not applied', 'Not Applied'),
         ('interview', 'Interview'),
         ('offer', 'Offer'),
         ('rejected', 'Rejected'),
