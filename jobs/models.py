@@ -12,7 +12,7 @@ class JobApplication(models.Model):
     company = models.CharField(max_length=200)
     position = models.CharField(max_length=200)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='applied')
-    applied_date = models.DateField(auto_now_add=True)
+    applied_date = models.DateField()
     notes = models.TextField(blank=True)
     job_url = models.URLField(blank=True)
 
