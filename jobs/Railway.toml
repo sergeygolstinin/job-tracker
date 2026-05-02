@@ -1,0 +1,26 @@
+You reached the start of the range
+May 2, 2026, 5:00 PM
+scheduling build on Metal builder "production-builderv3-us-west1-0hwp"
+unpacking archive370 KB3ms
+uploading snapshot65.5 KB
+using build driver railpack-v0.23.0
+                   
+╭─────────────────╮
+│ Railpack 0.23.0 │
+╰─────────────────╯
+ 
+  ↳ Detected Python
+  ↳ Using pip
+  ✖ No start command detected. Specify a start command: https://railpack.com/config/file
+  
+  To start your Python application, Railpack will automatically:
+  
+  1. Start FastHTML projects with uvicorn
+  2. Start FastAPI projects with uvicorn
+  3. Start Flask projects with gunicorn
+  4. Start Django projects with the gunicorn production server
+  
+  Otherwise, it will run the main.py or app.py file in your project root
+ 
+ 
+railpack process exited with an error
