@@ -29,7 +29,7 @@ function App() {
   })
 
   const fetchJobs = () => {
-    axios.get('http://127.0.0.1:8000/api/jobs/')
+  axios.get('https://job-tracker-production-6e05.up.railway.app/api/jobs/')
       .then(response => {
         setJobs(response.data)
         setLoading(false)
@@ -46,7 +46,7 @@ function App() {
 
   const handleSubmit = () => {
     if (!form.company || !form.position) return
-    axios.post('http://127.0.0.1:8000/api/jobs/', form)
+    axios.post('https://job-tracker-production-6e05.up.railway.app/api/jobs/', form)
       .then(() => {
         fetchJobs()
         setForm({ company: '', position: '', status: 'not applied', notes: '', job_url: '', applied_date: new Date().toISOString().split('T')[0] })
@@ -55,13 +55,13 @@ function App() {
   }
 
   const handleDelete = (id: number) => {
-    axios.delete(`http://127.0.0.1:8000/api/jobs/${id}/`)
+    axios.delete(`https://job-tracker-production-6e05.up.railway.app/api/jobs/${id}/`)
       .then(() => fetchJobs())
       .catch(error => console.error('Error deleting job:', error))
   }
 
   const handleEditSave = (id: number) => {
-    axios.patch(`http://127.0.0.1:8000/api/jobs/${id}/`, { status: editStatus })
+   axios.patch(`https://job-tracker-production-6e05.up.railway.app/api/jobs/${id}/`, { status: editStatus })
       .then(() => {
         fetchJobs()
         setEditingId(null)
