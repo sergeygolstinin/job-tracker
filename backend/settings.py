@@ -128,4 +128,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://job-tracker-production-6e05.up.railway.app',
+    'http://job-tracker-production-6e05.up.railway.app',
 ]
