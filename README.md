@@ -2,10 +2,10 @@
 ![Job Application Tracker Screenshot](Screenshot.png)
 A full-stack web application to track job applications during a job search. Built with Django REST Framework and React + TypeScript.
 
-## Live Demo
+## Live Demo 
 
-- **Frontend:** https://job-tracker-p7ha8hlft-sergeygolstinins-projects.vercel.app
-- **API:** https://job-tracker-production-6e05.up.railway.app/api/jobs/
+Live Demo: https://job-tracker-mu-one.vercel.app
+API: https://job-tracker-production-6e05.up.railway.app/api/jobs/
 
 ## Features
 
