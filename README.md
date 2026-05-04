@@ -1,5 +1,5 @@
 # Job Application Tracker
-
+![Job Application Tracker Screenshot](screenshot.png)
 A full-stack web application to track job applications during a job search. Built with Django REST Framework and React + TypeScript.
 
 ## Live Demo
